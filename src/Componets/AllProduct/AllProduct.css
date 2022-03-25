@@ -11,3 +11,17 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
+.select-product-btn{
+    width: 100%;
+    margin: 15px 0;
+    border-radius: 10px;
+    background-image: radial-gradient(to right, );
+    font-weight: bolder;
+}
+.rest-btn{
+    width: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, rgba(238, 37, 37, 0.794), rgba(243, 114, 114, 0.698));
+    font-weight: bolder;
+
+}
