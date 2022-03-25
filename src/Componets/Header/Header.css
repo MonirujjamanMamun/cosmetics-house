@@ -1,7 +1,12 @@
 .header-container{
     background-color: rgba(105, 90, 205, 0.849);
-    padding: 15px 20px;
+    background-image: linear-gradient(to right, rgba(70, 70, 236, 0.767), rgba(57, 231, 231, 0.671), rgba(15, 150, 15, 0.657));
+    padding: 10px 20px;
     color: white;
     text-transform: uppercase;
     text-align: center;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }

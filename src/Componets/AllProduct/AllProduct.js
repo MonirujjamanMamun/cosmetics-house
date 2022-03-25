@@ -17,7 +17,9 @@ const AllProduct = () => {
                     products.map(product => <SingleProduct key={product.id} product ={product} ></SingleProduct> )
                 }
             </div>
-            <div className="order-section"></div>
+            <div className="order-section">
+                <h1>Order Section</h1>
+            </div>
         </div>
     );
 };

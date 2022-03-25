@@ -3,11 +3,11 @@
 .products-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    justify-items: center;
+    /* justify-items: center; */
     margin-top: 15px;
 }
 .products-section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 15px;
 }

@@ -15,10 +15,18 @@
 }
 .card-btn{
     width: 100%;
-    background-color: rgba(102, 102, 235, 0.76);
+    background-image: linear-gradient(to right, rgba(57, 231, 231, 0.671), rgba(61, 61, 243, 0.877), rgba(15, 150, 15, 0.657));
     border: 0;
     border-radius: 10px;
+    font-weight: bold;
+    color: white;
     position: absolute;
     bottom: 0;
     left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-text{
+    margin-right: 15px;
 }
