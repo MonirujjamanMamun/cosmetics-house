@@ -1,0 +1,24 @@
+
+.produc-container{
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 10px;
+    width: 210px;
+    height: 310px;
+    position: relative;
+}
+.produc-container img{
+    width: 200px;
+    height: 180px;
+    border-radius: 15px;
+    
+}
+.card-btn{
+    width: 100%;
+    background-color: rgba(102, 102, 235, 0.76);
+    border: 0;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
