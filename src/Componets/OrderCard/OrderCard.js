@@ -2,8 +2,8 @@ import React from 'react';
 import './OrderCard.css';
 
 const OrderCard = (props) => {
-    console.log(props)
-    const{img, name, id}=props.card;
+    // console.log(props)
+    const{img, name}=props.card;
     
     return (
         <div>

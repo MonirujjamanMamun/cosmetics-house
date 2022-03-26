@@ -6,6 +6,7 @@ import './AllProduct.css';
 const AllProduct = () => {
     const [products, setProducts] = useState([]);
     const [cards, setCard]= useState([]);
+    const [showProduct, setShowProduct] = useState([])
   
 
     
@@ -18,8 +19,13 @@ const AllProduct = () => {
     const resetAll = ()=>{
         setCard([]);
     }
-    // const oneProduct = () =>{
-    //     Math.random()
+
+    
+    const oneProduct = () =>{
+        const getOneProduct = Math.floor(Math.random()* cards.length);
+        setShowProduct(cards[getOneProduct]);
+        console.log(showProduct)
+    }
 
     useEffect( () =>{
         fetch('fackData.json')
@@ -38,7 +44,7 @@ const AllProduct = () => {
                 {
                     cards.map(card =><OrderCard card={card} key={card.id}></OrderCard> )
                 }
-                <button  className='select-product-btn'>
+                <button onClick={oneProduct} className='select-product-btn'>
                      <p>Select One Product</p>
                 </button> 
                      <br />
