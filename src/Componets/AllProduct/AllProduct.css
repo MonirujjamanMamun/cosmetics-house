@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     margin-top: 15px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .products-section{
     display: grid;
@@ -34,9 +34,9 @@
 
 }
 .one-product-section img{
-    width: 75px;
+    width: 70px;
     height: 70px;
-    margin-right: 5px;
+    padding-right: 5px;
     border-radius: 15px;
 }
 
