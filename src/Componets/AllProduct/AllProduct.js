@@ -24,7 +24,7 @@ const AllProduct = () => {
     const oneProduct = () =>{
         const getOneProduct = Math.floor(Math.random()* cards.length);
         setShowProduct(cards[getOneProduct]);
-        console.log(showProduct)
+        alert({showProduct})
     }
 
     useEffect( () =>{
