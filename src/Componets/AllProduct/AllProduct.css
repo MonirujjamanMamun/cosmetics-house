@@ -3,7 +3,6 @@
 .products-container{
     display: grid;
     grid-template-columns: 4fr 1fr;
-    /* justify-items: center; */
     margin-top: 15px;
     margin-left: 20px;
 }
