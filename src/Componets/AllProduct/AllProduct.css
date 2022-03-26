@@ -15,7 +15,7 @@
     width: 100%;
     margin: 15px 0;
     border-radius: 10px;
-    background-image: radial-gradient(to right, );
+    background-image: linear-gradient(to right, rgba(43, 177, 132, 0.856), rgba(228, 195, 51, 0.698));
     font-weight: bolder;
 }
 .rest-btn{

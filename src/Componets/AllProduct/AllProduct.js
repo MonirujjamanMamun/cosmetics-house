@@ -64,8 +64,8 @@ const AllProduct = () => {
 
                 <div style={show}>
                     <div className='one-product-section'>
-                        <img src={showProduct.img} alt="" />
-                        <h4>{showProduct.name}</h4>
+                        <img src={showProduct?.img} alt="" />
+                        <h4>{showProduct?.name}</h4>
                     </div>
                 </div>
             </div>
