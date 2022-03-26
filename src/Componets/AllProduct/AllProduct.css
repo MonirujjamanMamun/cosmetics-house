@@ -24,7 +24,9 @@
     background-image: linear-gradient(to right, rgba(238, 37, 37, 0.794), rgba(243, 114, 114, 0.698));
     font-weight: bolder;
 }
-
+.order-section{
+    padding: 10px;
+}
 .one-product-section{
     display: flex;
     align-items: center;
