@@ -6,26 +6,35 @@ import './AllProduct.css';
 const AllProduct = () => {
     const [products, setProducts] = useState([]);
     const [cards, setCard]= useState([]);
-    const [showProduct, setShowProduct] = useState([])
+    const [showProduct, setShowProduct] = useState('');
+    const[show, setShow]= useState({display:'none'});
   
-
     
-    const addToCard = (produc)=>{
-        const newCard = [...cards, produc]
-        setCard(newCard);
+    const addToCard = (product)=>{
+        if(cards.length < 4 ){
+            const chakeProduct = cards.find(pd=>pd.id===product.id);
+            if(!chakeProduct){
+                const newCard = [...cards, product]
+                setCard(newCard)
+            }else{
+                alert('This item added already.')
+            }
+        }else{
+            alert('You Select 4 product already.')
+        }        
     }
 
 
     const resetAll = ()=>{
         setCard([]);
+        setShow({display:'none'})
     }
 
-    
     const oneProduct = () =>{
         const getOneProduct = Math.floor(Math.random()* cards.length);
-        setShowProduct(cards[getOneProduct]);
-        console.log(showProduct.name)
-        alert('Your Product is : ' + showProduct.name)
+        const selectedProduct=cards[getOneProduct];
+        setShowProduct(selectedProduct);
+        setShow({display:'block'});    
     }
 
     useEffect( () =>{
@@ -52,7 +61,15 @@ const AllProduct = () => {
                 <button onClick={resetAll} className='rest-btn'>
                     <p>Reset</p>
                 </button>
+
+                <div style={show}>
+                    <div className='one-product-section'>
+                        <img src={showProduct.img} alt="" />
+                        <h4>{showProduct.name}</h4>
+                    </div>
+                </div>
             </div>
+            
         </div>
     );
 };
