@@ -3,13 +3,15 @@ import OrderCard from '../OrderCard/OrderCard';
 import SingleProduct from '../SingleProduct/SingleProduct';
 import './AllProduct.css';
 
+
+
 const AllProduct = () => {
     const [products, setProducts] = useState([]);
     const [cards, setCard]= useState([]);
     const [showProduct, setShowProduct] = useState('');
     const[show, setShow]= useState({display:'none'});
   
-    
+    // add to card handelar 
     const addToCard = (product)=>{
         if(cards.length < 4 ){
             const chakeProduct = cards.find(pd=>pd.id===product.id);
@@ -24,7 +26,7 @@ const AllProduct = () => {
         }        
     }
 
-
+    // rest all all data handelar 
     const resetAll = ()=>{
         setCard([]);
         setShow({display:'none'})
@@ -45,11 +47,14 @@ const AllProduct = () => {
 
     return (
         <div className='products-container'>
+            {/* all product section  */}
             <div className='products-section'>
                 {
                     products.map(product => <SingleProduct key={product.id} product ={product} addToCard={addToCard} ></SingleProduct> )
                 }
             </div>
+
+            {/* order section  */}
             <div className="order-section">
                 {
                     cards.map(card =><OrderCard card={card} key={card.id}></OrderCard> )
@@ -62,6 +67,7 @@ const AllProduct = () => {
                     <p>Reset</p>
                 </button>
 
+                {/* display one product to click one product handerlar */}
                 <div style={show}>
                     <div className='one-product-section'>
                         <img src={showProduct?.img} alt="" />
